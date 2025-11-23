@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Chess Explorers | Study Resources</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo-wrap">
+        <img src="ChessExplorers.png" alt="Chess Explorers logo" class="logo-img" />
+        <div class="logo-text">
+          <span class="logo-title">Chess Explorers</span>
+          <span class="logo-tagline">Free Chess for Kids</span>
+        </div>
+      </a>
+      <nav class="main-nav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="mission.html" class="nav-link">Our Mission</a>
+        <a href="resources.html" class="nav-link active">Study Resources</a>
+        <a href="contact.html" class="nav-link btn-nav">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section hero-sub">
+      <div class="container narrow">
+        <h1>Study Resources</h1>
+        <p class="lead">
+          A curated collection of lessons, puzzles, and practice tools to support kids during
+          Chess Explorers sessions and at home.
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="resources-toolbar">
+          <div class="filter-buttons">
+            <button class="btn pill active" data-filter="all">All Levels</button>
+            <button class="btn pill" data-filter="beginner">Beginner</button>
+            <button class="btn pill" data-filter="intermediate">Intermediate</button>
+            <button class="btn pill" data-filter="advanced">Advanced</button>
+          </div>
+          <input
+            type="text"
+            id="resourceSearch"
+            class="search-input"
+            placeholder="Search resources (e.g. openings, tactics)"
+          />
+        </div>
+
+        <div class="card-grid resources-grid" id="resourceGrid">
+          <!-- Beginner -->
+          <article class="card resource-card" data-level="beginner">
+            <h3>Basics: How the Pieces Move</h3>
+            <p>Simple guides and visuals explaining each piece and how to set up the board.</p>
+            <ul class="resource-links">
+              <li>Printable piece movement sheet (PDF)</li>
+              <li>Beginner slideshow used in Chess Explorers sessions</li>
+            </ul>
+          </article>
+
+          <article class="card resource-card" data-level="beginner">
+            <h3>Checkmates in One</h3>
+            <p>Short puzzles designed for new players to recognize checkmate patterns.</p>
+            <ul class="resource-links">
+              <li>Worksheet: 10 checkmate-in-one puzzles</li>
+              <li>Interactive puzzle set (online)</li>
+            </ul>
+          </article>
+
+          <!-- Intermediate -->
+          <article class="card resource-card" data-level="intermediate">
+            <h3>Opening Principles</h3>
+            <p>
+              Learn key ideas like development, center control, and king safety without
+              memorizing long lines.
+            </p>
+            <ul class="resource-links">
+              <li>Session notes: good and bad opening moves</li>
+              <li>Practice positions for group review</li>
+            </ul>
+          </article>
+
+          <article class="card resource-card" data-level="intermediate">
+            <h3>Tactics Trainer</h3>
+            <p>Forks, pins, skewers, and more, explained with examples and practice problems.</p>
+            <ul class="resource-links">
+              <li>Tactics slideshow (Chess Explorers lesson)</li>
+              <li>Printable puzzles for home practice</li>
+            </ul>
+          </article>
+
+          <!-- Advanced -->
+          <article class="card resource-card" data-level="advanced">
+            <h3>Endgame Essentials</h3>
+            <p>
+              Learn how to convert winning positions and defend difficult ones with clear
+              endgame techniques.
+            </p>
+            <ul class="resource-links">
+              <li>King and pawn endings guide</li>
+              <li>Rook endgame study sheet</li>
+            </ul>
+          </article>
+
+          <article class="card resource-card" data-level="advanced">
+            <h3>Analyze Your Own Games</h3>
+            <p>
+              A step-by-step worksheet to help students review their games and find better moves.
+            </p>
+            <ul class="resource-links">
+              <li>Game analysis template</li>
+              <li>Reflection questions for tournaments</li>
+            </ul>
+          </article>
+        </div>
+
+        <p class="note">
+          These resources are designed to pair with our in-person sessions at daycares and youth
+          programs. If you'd like access to the full materials set, please contact us.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Chess Explorers. All rights reserved.</p>
+      <p class="footer-sub">Study, explore, and enjoy the game.</p>
+    </div>
+  </footer>
+</body>
+</html>

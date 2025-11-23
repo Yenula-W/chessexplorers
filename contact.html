@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Chess Explorers | Contact</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo-wrap">
+        <img src="ChessExplorers.png" alt="Chess Explorers logo" class="logo-img" />
+        <div class="logo-text">
+          <span class="logo-title">Chess Explorers</span>
+          <span class="logo-tagline">Free Chess for Kids</span>
+        </div>
+      </a>
+      <nav class="main-nav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="mission.html" class="nav-link">Our Mission</a>
+        <a href="resources.html" class="nav-link">Study Resources</a>
+        <a href="contact.html" class="nav-link btn-nav active">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section hero-sub">
+      <div class="container narrow">
+        <h1>Contact Us</h1>
+        <p class="lead">
+          Want Chess Explorers to visit your daycare or youth program, volunteer with us,
+          or ask a question about helping less fortunate kids through chess? Reach out—we'd love
+          to hear from you.
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container contact-grid">
+        <div>
+          <h2 class="section-title">Send a Message</h2>
+          <!-- This form does not send email by itself; connect it to a service later -->
+          <form id="contactForm" class="contact-form">
+            <div class="form-group">
+              <label for="name">Full Name</label>
+              <input id="name" name="name" type="text" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" required />
+            </div>
+            <div class="form-group">
+              <label for="role">I am a...</label>
+              <select id="role" name="role" required>
+                <option value="">Select one</option>
+                <option value="parent">Parent / Guardian</option>
+                <option value="daycare-staff">Daycare or Youth Program Staff</option>
+                <option value="volunteer">Potential Volunteer</option>
+                <option value="student">Student Volunteer</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">How can we help?</label>
+              <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn primary">Submit</button>
+            <p id="formStatus" class="form-status" aria-live="polite"></p>
+          </form>
+        </div>
+
+        <aside class="contact-info">
+          <h2 class="section-title">Contact Details</h2>
+          <p>
+            <strong>Email:</strong><br />
+            <a href="mailto:yenulawickramasinghe@gmail.com">yenulawickramasinghe@gmail.com</a>
+          </p>
+          <p>
+            <strong>Phone:</strong><br />
+            <a href="tel:13464528559">(346) 452-8559</a>
+          </p>
+          <p>
+            <strong>Based in:</strong><br />
+            [Your City / Area]
+          </p>
+          <p class="note">
+            We typically respond within a few days, especially during the school year.
+          </p>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Chess Explorers. All rights reserved.</p>
+      <p class="footer-sub">Let’s bring chess to more kids together.</p>
+    </div>
+  </footer>
+</body>
+</html>
